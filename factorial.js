@@ -19,5 +19,16 @@ console.log(factorial(6));
 
 
 // using recursion
-
+const factorial = number => {
+  if (number <=1)
+  {
+      number = 1;
+  }
+  if (number >= 2)
+  {
+    number = number * factorial(number -1);
+  }
+  return number
+};
+console.log(factorial(3))
 
